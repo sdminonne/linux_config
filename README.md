@@ -1,0 +1,3 @@
+# Linux config...
+
+Not sure it will work. Just to be tested.

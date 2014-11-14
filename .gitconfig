@@ -1,0 +1,18 @@
+[user]
+	email = <put your email here> 
+	name = <put your name here> 
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+        cmd = /usr/bin/kdiff3 "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+	trustExitCode = false
+       	keepBackup = false
+
+[difftool "kdiff3"]
+	cmd = /usr/bin/kdiff3 $LOCAL $REMOTE
+[difftool]
+	prompt = false
+[push]
+	default = simple
