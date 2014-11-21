@@ -17,7 +17,13 @@ alias xterm='xterm -bg black -fg white'
 export GOPATH=${HOME}/go
 export PATH=${GOPATH}/bin:${PATH}:${HOME}/.cask/bin
 
-source /usr/share/git/completion/git-prompt.sh
+if [ -f /etc/redhat-release ]; then
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+else
+    source /usr/share/git/completion/git-prompt.sh
+fi
+
+
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
