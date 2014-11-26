@@ -19,6 +19,8 @@ export PATH=${GOPATH}/bin:${PATH}:${HOME}/.cask/bin
 
 if [ -f /etc/redhat-release ]; then
     source /usr/share/git-core/contrib/completion/git-prompt.sh
+elif [ -f /etc/linuxmint/info ]; then
+    source /etc/bash_completion.d/git-prompt
 else
     source /usr/share/git/completion/git-prompt.sh
 fi
