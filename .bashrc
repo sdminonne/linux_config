@@ -35,3 +35,5 @@ PROMPT_COMMAND='__git_ps1 "\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\
 GREP_OPTIONS='--color'
 LESS='-R'
 HISTIGNORE='&:ls'
+
+export BOOST=$HOME/BOOST

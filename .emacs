@@ -126,7 +126,7 @@
 
 
 (modify-frame-parameters nil '((wait-for-wm . nil)))
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 
 ;;; GO MODE
